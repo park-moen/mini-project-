@@ -1,7 +1,9 @@
-body {
+body{
+
 }
 
 .container {
+
 }
 
 /* header */
@@ -10,8 +12,9 @@ body {
   background-color: #f6f5ef;
   top: 0;
   left: 0;
-  right: 0;
+  right: 0; 
   position: fixed;
+
 }
 
 /* 네비게이션 요소가 뷰포트 전체 영역을 차지 하기 위한 역할 */
@@ -21,7 +24,7 @@ body {
   justify-content: flex-end;
   flex-flow: row wrap;
   align-items: center;
-  border: 1px solid black;
+  border:  1px solid black;
 }
 
 /*header__logo*/
@@ -29,12 +32,13 @@ body {
 .header__logo {
   width: 80px;
   height: 80px;
-
+  
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 150px;
 }
+
 
 .header__logo img {
   width: 100%;
@@ -53,10 +57,11 @@ body {
   justify-content: flex-end;
 }
 
-.nav__menuItem > a {
+
+.nav__menuItem > a{
   display: block;
   padding: 20px 30px 40px 30px;
-  font-size: 1.4rem;
+  font-size: 1.4rem;  
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -72,7 +77,7 @@ body {
 .unList__userLink {
   font-size: 0;
 }
-.unList__userLink li {
+.unList__userLink li{
   display: inline-block;
   border-right: 1px solid #ccc;
 }
@@ -83,6 +88,7 @@ body {
 .unList__userLink a {
   font-size: 1.2rem;
   padding: 10px 15px;
+  
 }
 
 .unList__userLink a:hover {
@@ -94,7 +100,7 @@ body {
   position: relative;
 }
 
-.form input {
+.form input{
   display: none;
   position: absolute;
   top: 1px;
@@ -124,12 +130,14 @@ body {
   cursor: pointer;
   overflow: hidden;
   padding-top: 34px;
-  background: #fff url("../starbuximg/icon_magnifier_black.png") no-repeat
-    center;
+  background: #fff url('../starbuximg/icon_magnifier_black.png') no-repeat center;
 }
 
+
+
 .form__btnSearch:focus,
-.form__btnSearch:hover {
+.form__btnSearch:hover
+{
   background-position: right;
   animation: anime 500ms both;
 }
@@ -137,6 +145,7 @@ body {
 @keyframes anime {
   0% {
     width: 32px;
+
   }
   100% {
     width: 180px;
@@ -145,34 +154,29 @@ body {
 
 /*article*/
 
+
+
 /* 슬로건 */
 .slogan {
-  /* background-color: #70c4d9; */
+  background: url(/starbuximg/summer3_mv_bg.png) no-repeat;
+ 
   min-height: 650px;
-  background-color: #70c4d9;
-  background-image: url(//image.istarbucks.co.kr/upload/common/img/main/2020/summer2_mv_bg.png);
-  background-position: end;
-  background-repeat: repeat;
-  background-size: 100% 100%;
-}
-.slogan .inner {
-  margin: 0 auto;
   position: relative;
-  /* width: 1100px; */
+
 }
 .slogan__img {
   /* background-color: blue; */
   padding-top: 70px;
-  padding-left: 10.909090909090909%;
+  padding-left: 150px;
   opacity: 0;
-  animation: sloganAni 1s ease-in-out 1.5s both;
+  animation: sloganAni 1s ease-in-out 1.5s  both;
 }
 .slogan__link {
   margin: 0;
   padding: 0;
   position: absolute;
   top: 370px;
-  left: 120px;
+  left: 150px;
   font-size: 1.5rem;
   font-weight: 400;
   border: 2px #fff solid;
@@ -185,61 +189,56 @@ body {
 }
 
 .slogan__link:hover {
-  background-color: #00a252;
+  background-color: #00A252;
   text-decoration: underline;
 }
 .slogan__figure1 {
   position: absolute;
   top: 240px;
-  left: 35%;
+  left: 550px;
   opacity: 0;
-  animation: sloganAni 1s ease-in-out 0.5s both;
+  animation: sloganAni 1s ease-in-out 0.5s  both;
 }
 .slogan__figure2 {
   position: absolute;
   top: 80px;
-  left: 55%;
+  left: 790px;
   opacity: 0;
-  animation: sloganAni 1s ease-in-out both;
+ 
+  animation: sloganAni 1s ease-in-out  both;
 }
 .slogan__figure3 {
   position: absolute;
   top: 200px;
-  left: 65%;
+  left: 900px;
   opacity: 0;
-  animation: sloganAni 1s ease-in-out 1s both;
+  animation: sloganAni 1s ease-in-out 1.0s  both;
 }
 .slogan__figure1 img {
   width: 290px;
-  /* width: 100%;
-  max-width: 290px; */
 }
 .slogan__figure2 img {
   width: 180px;
-  /* width: 100%;
-  max-width: 180px; */
 }
 .slogan__figure3 img {
   width: 320px;
-  /* width: 100%;
-  max-width: 320px; */
 }
 .slogan figcaption {
   color: #fff;
   font-size: 1.7rem;
   font-weight: 400;
 }
-.slogan__figcaption1 {
+.slogan__figcaption1{
   position: absolute;
   top: 220px;
   left: -170px;
 }
-.slogan__figcaption2 {
+.slogan__figcaption2{
   position: absolute;
   top: 20px;
   left: -230px;
 }
-.slogan__figcaption3 {
+.slogan__figcaption3{
   position: absolute;
   top: 360px;
   left: 80px;
@@ -265,16 +264,16 @@ figcaption div {
   text-transform: uppercase;
 }
 
-figcaption div::after {
+figcaption div::after{
   content: "";
   display: block;
   border-bottom: 1px solid #fff;
-  margin: 0;
+  margin:0;
   margin: 10px 0;
 }
 
 @keyframes sloganAni {
-  0% {
+  0%{
     opacity: 0;
   }
   100% {
@@ -289,6 +288,7 @@ figcaption div::after {
   background-color: #111;
   color: #fff;
   padding: 15px 0;
+
 }
 
 .notice__heading {
@@ -306,19 +306,24 @@ figcaption div::after {
   padding: 5px 0 10px;
   overflow: hidden;
   margin-right: 40px;
+
 }
 .notice__list li {
-  animation: listanime 5s linear infinite alternate;
+  animation: listanime 5s linear  infinite alternate;
   margin-bottom: 10px;
 }
 
 .notice__list a {
   display: block;
   padding: 5px 400px 0 0;
+
 }
-.notice__list a:hover {
+.notice__list a:hover{
   text-decoration: underline;
 }
+
+
+
 
 .notice__link {
   vertical-align: middle;
