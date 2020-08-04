@@ -1,43 +1,3 @@
-.nav__subMenu {
-  display: none;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.a11yHidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  clip-path: polygon(0 0, 0 0, 0 0);
-}
-
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 10px;
-}
-body {
-  font-family: "Noto Sans KR", "Jeju Gothic", sans-serif;
-  font-weight: 300;
-  color: #181818;
-  background-color: #f6f5ef;
-  margin-top: 132px;
-}
-
 .inner {
   width: 1100px;
   margin: 0 auto;
@@ -50,9 +10,6 @@ body {
   left: 0;
   right: 0;
   position: fixed;
-}
-
-.header .inner {
 }
 
 .header__logo {
@@ -175,12 +132,12 @@ body {
 }
 
 .slogan {
-  /* background-color: #70c4d9; */
+  /* background-color: #70C4D9; */
   min-height: 650px;
   background-color: #70c4d9;
-  background-image: url(//image.istarbucks.co.kr/upload/common/img/main/2020/summer2_mv_bg.png);
-  background-position: end;
-  background-repeat: repeat;
+  background-image: url(//image.istarbucks.co.kr/upload/common/img/main/2020/summer3_mv_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .slogan .inner {
@@ -211,7 +168,6 @@ body {
   opacity: 0;
   animation: sloganAni 1s ease-in-out 2s both;
 }
-
 .slogan__link:hover {
   background-color: #00a252;
   text-decoration: underline;
@@ -237,11 +193,13 @@ body {
   opacity: 0;
   animation: sloganAni 1s ease-in-out 1s both;
 }
+
 .slogan__figure1 img {
   /* width: 290px; */
   width: 100%;
   max-width: 290px;
 }
+
 .slogan__figure2 img {
   /* width: 180px; */
   width: 100%;
@@ -278,7 +236,7 @@ body {
   text-transform: uppercase;
   line-height: 1.4;
 }
-figcaption span:nth-child(1)::after {
+.slogan figcaption span:nth-child(1)::after {
   content: "";
   display: block;
   border-bottom: 1px solid #fff;
@@ -287,29 +245,6 @@ figcaption span:nth-child(1)::after {
 .slogan__figcaption2 span:nth-child(1)::after {
   border: none;
 }
-
-figcaption div {
-  text-align: center;
-  text-transform: uppercase;
-}
-
-figcaption div::after {
-  content: "";
-  display: block;
-  border-bottom: 1px solid #fff;
-  margin: 0;
-  margin: 10px 0;
-}
-
-@keyframes sloganAni {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 figcaption div {
   text-align: center;
   text-transform: uppercase;
@@ -385,5 +320,289 @@ figcaption div::after {
 
   100% {
     transform: translateY(-510%);
+  }
+}
+
+.memberService {
+  /* height: auto; */
+  min-height: 260px;
+  /* background-color: #272727; */
+  padding: 20px 50px;
+  padding-right: 0;
+  background-image: url(../starbuximg/reward_star_bg_m.png),
+    url(../starbuximg/272727.png), url(../starbuximg/reward_texbg.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 20% 100%, 20% 100%, 80% 100%;
+  background-position: left 250px top 0px, left 0 top 0px, right 0px top 0px;
+  padding-left: 240px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+}
+.memberService .inner {
+  margin-left: 100px;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+}
+.memberService__heading {
+  font-size: 2rem;
+  font-weight: 400;
+  padding-left: 10%;
+  /* text-align: left; */
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+.memberService__heading em {
+  font-weight: 700;
+}
+.memberService__logDes {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-left: 10%;
+  margin-bottom: 20px;
+  color: #666;
+  /* width: 530px; */
+  display: flex;
+  flex-flow: row nowrap;
+  line-height: 1.4;
+  word-spacing: 1px;
+  /* padding-right: 450px; */
+  /* padding-right: 240px; */
+}
+.memberService__logDes p em {
+  display: inline-block;
+}
+.memberService__logDes p {
+  flex-grow: 1;
+}
+.memberService__logDes em {
+  font-weight: 700;
+  color: #555;
+}
+
+/* 클래스명 변경 */
+.memberService__signGroup {
+  position: absolute;
+  top: 35px;
+  right: 5%;
+}
+.memberService__logDes-signUp {
+  display: inline-block;
+  padding: 8px 30px;
+  border: 1px solid #000;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 500ms linear;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+.memberService__logDes-signIn {
+  display: inline-block;
+  padding: 8px 35px;
+  border: 1px solid #000;
+  background-color: transparent;
+  color: #000;
+  border-radius: 3px;
+  transition: all 500ms linear;
+  /* margin-top: 10px; */
+  /* margin-right: 5px; */
+}
+.memberService__logDes-signUp:hover {
+  text-decoration: underline;
+  background-color: transparent;
+  color: #000;
+}
+.memberService__logDes-signIn:hover {
+  text-decoration: underline;
+  background-color: #000;
+  color: #fff;
+}
+.memberService__giftDes {
+  padding-left: 10%;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #666;
+  /* padding-right: 520px; */
+  position: relative;
+}
+/* .memberService__logDes p em {
+  display: inline-block;
+} */
+.memberService__giftDes em {
+  font-weight: 700;
+  display: block;
+  color: #555;
+}
+
+/* 클래스명 추가 */
+.memberService__giftLink {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  padding: 8px 50px;
+  border: 1px solid #000;
+  background-color: transparent;
+  color: #000;
+  border-radius: 3px;
+  transition: all 500ms linear;
+  /* margin-top: 10px; */
+  /* margin-right: 5px; */
+  transition: all 500ms linear;
+}
+.memberService__giftLink:hover {
+  text-decoration: underline;
+  background-color: #000;
+  color: #fff;
+}
+.memberService__logo {
+  order: -1;
+  width: 200px;
+  height: 50px;
+  align-self: center;
+}
+.memberService__logDes span,
+.memberService__giftDes span {
+  display: block;
+}
+
+/* 커피 광고 */
+.ad {
+  background-image: url(../starbuximg/20_summer_rwanda_bg.jpg);
+  background-size: cover;
+  background-color: #dbebf8;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.ad__figure img {
+  float: left;
+  padding-left: 150px;
+  padding-top: 75px;
+  animation: adanime1 2s;
+  padding-bottom: 55px;
+}
+.ad__figcaption {
+  float: left;
+  padding-left: 115px;
+  padding-top: 170px;
+  line-height: 1.5;
+  animation: adanime 2s;
+  /* margin-left: 90px; */
+}
+.ad__figcaption-selling {
+  font-size: 2rem;
+  color: #bae1c6;
+
+  /* margin-left: 390px; */
+  /* display: inline-block; */
+}
+.ad__figcaption-selling span {
+  font-size: 3rem;
+  display: block;
+}
+.ad__figcaption-sellingDes {
+  color: #fff;
+  font-size: 1.7rem;
+  padding-top: 15px;
+  opacity: 0.8;
+  /* margin-left: 390px; */
+  /* display: inline-block; */
+}
+.ad__figcaption-sellingDes span {
+  display: block;
+}
+.ad__link {
+  font-size: 1.5rem;
+  display: inline-block;
+  padding: 5px 15px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 3px;
+  transition: all 500ms linear;
+  margin-top: 45px;
+}
+.ad__link:hover {
+  color: #000;
+  background-color: #fff;
+  text-decoration: underline;
+}
+
+@keyframes adanime {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes adanime1 {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* 새소식 */
+.news {
+  background-color: #c3d2d9;
+  /* 해상도 이슈 */
+  min-height: 400px;
+  /* background-image: url(../starbuximg/summer2_reserve_bean.png);
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: 680px 0; */
+}
+.news__heading {
+  margin-left: -130px;
+  padding-top: 70px;
+}
+.news-bg {
+  animation: newsAni 2s;
+  width: 75%;
+}
+.news a {
+  display: inline-block;
+  border: 2px solid #000;
+  margin: 10px;
+  margin-left: 50px;
+  padding: 10px 25px;
+  font-size: 1.5rem;
+  border-radius: 3px;
+  background-color: transparent;
+  transition: all 500ms linear;
+}
+.news a:hover {
+  background-color: #000;
+  color: #fff;
+  text-decoration: underline;
+}
+.news__list {
+  margin-top: 10px;
+  margin-left: 50px;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  color: #5b6567;
+  list-style: square;
+}
+/* .news::after {
+  content: "";
+  width: 550px;
+  height: 500px;
+  display: block;
+} */
+@keyframes newsAni {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

@@ -17,15 +17,15 @@ body {
   font-family: "Noto Sans KR", "Jeju Gothic", sans-serif;
   font-weight: 300;
   color: #181818;
-  background-color: #f6f5ef;
   margin-top: 140px;
+  /* overflow: auto; */
+  background-color: inherit;
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
-
 .a11yHidden {
   position: absolute;
   width: 1px;
@@ -36,7 +36,7 @@ a {
 }
 
 .container {
-  width: 100%;
+  /* width: 100%; */
   /* margin: 0 auto; */
 }
 .clearfix::after {
