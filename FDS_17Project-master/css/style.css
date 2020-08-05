@@ -554,7 +554,7 @@ figcaption div::after {
   background-position: 600px 60px;
   background-size: 1000px;
   background-attachment: scroll;
-  animation: newsanime 2s forwards;
+  animation: newsanime 2s 2s forwards;
 }
 .news__heading {
   padding-top: 80px;
@@ -597,5 +597,109 @@ figcaption div::after {
   100% {
     opacity: 1;
     background-image: url("../starbuximg/summer2_reserve_bean.png");
+  }
+}
+
+/* favorite */
+
+.favorite {
+  background-image: url(../starbuximg/fav_prod_bg_new.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 800px;
+  background-color: lightcyan;
+  position: relative;
+}
+.favorite__heading {
+  font-weight: 500;
+  color: #fff;
+  width: 420px;
+  margin-left: 80px;
+  padding-top: 110px;
+  text-align: start;
+  text-indent: 2em;
+  animation: adanime1 2s ease-in-out;
+}
+.favorite__heading span:first-child {
+  font-size: 10rem;
+}
+.favorite__heading span:last-child {
+  font-size: 6rem;
+  display: block;
+  margin-top: 10px;
+  text-indent: 1px;
+}
+.favorite p {
+  animation: adanime1 2s 300ms ease-in-out;
+}
+.favorite__paragraph {
+  margin-left: 35px;
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: end;
+  display: inline-block;
+  color: #fff;
+  padding-top: 40px;
+  line-height: 1.3;
+}
+.favorite__subParagraph {
+  font-size: 1.5rem;
+  color: #fff;
+  opacity: 0.9;
+  text-align: end;
+  width: 420px;
+  text-align: end;
+  padding-top: 20px;
+  padding-right: 50px;
+  line-height: 1.5;
+  margin-left: -15px;
+}
+.favorite__link {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 123px;
+  height: 40px;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 230px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  border: 2px #fff solid;
+  padding: 10px 25px;
+  color: #fff;
+  border-radius: 3px;
+  transition: all 500ms;
+  animation: favoriteAni 3s ease-in-out both;
+  opacity: 0;
+}
+.favorite__link:hover {
+  background-color: #fff;
+  color: #000;
+  text-decoration: underline;
+}
+.favorite__img {
+  position: absolute;
+  top: 115px;
+  right: 100px;
+}
+
+@keyframes adanime1 {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes favoriteAni {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
