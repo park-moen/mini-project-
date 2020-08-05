@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Starbucks Coffee Korea</title>
+
+    <title>Document</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
@@ -11,16 +12,15 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- <link rel="stylesheet" href="./css/common.css"> -->
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/isAct.css" />
-    <link rel="shortcut icon" href="./favicon.ico" />
-    <!-- <link rel="stylesheet" media="screen and (min-width: 550px)" href="./css/media.css"> -->
+    <link rel="shortcut icon" href="./starbuximg/favicon.ico" />
     <script src="./js/jquery.min.js" defer></script>
     <script src="./js/main.js" defer></script>
-
-    <!-- <link rel="stylesheet" href="./css/large.css" media="screen and (min-width: 1000px)"> -->
   </head>
+
   <body>
     <div class="container">
       <header class="header">
@@ -36,7 +36,7 @@
 
               <ul class="nav__menu" id="nav__menu">
                 <!-- 누르면 이동 하니 aTAG를 사용 굳이 role을 변경해서
-  바꾸지 않아도 상관 없음 -->
+바꾸지 않아도 상관 없음 -->
                 <li class="nav__menuItem">
                   <a href="#">coffee</a>
 
@@ -112,11 +112,11 @@
                   </ul>
 
                   <!-- <dl class="nav__desList nav__desList1 isActdes">
-  <dt><a href="#">나와 어울리는 커피 찾기</a></dt>
-  <dd>스타벅스가 여러분에게 어울리는 커피를 찾아드립니다.</dd>
-  <dt><a href="#">최상의 커피를 즐기는 법</a></dt>
-  <dd>여러가지 방법을 통해 다양한 풍미의 커피를 즐겨보세요.</dd>
-  </dl> -->
+<dt><a href="#">나와 어울리는 커피 찾기</a></dt>
+<dd>스타벅스가 여러분에게 어울리는 커피를 찾아드립니다.</dd>
+<dt><a href="#">최상의 커피를 즐기는 법</a></dt>
+<dd>여러가지 방법을 통해 다양한 풍미의 커피를 즐겨보세요.</dd>
+</dl> -->
                 </li>
 
                 <li class="nav__menuItem">
@@ -410,8 +410,8 @@
               </li>
             </ul>
             <!-- StarBucks를 찾기 위해 버튼을 이용 focus를 이용했는데
-  사용자의 잘못 클릭을 한 경우 불편하기 때문에  불편함을 없애기 위해 hover시 input
-  box를 나오게 설정 이것은 서버로 전송 할 것이니 form태그를 이용-->
+사용자의 잘못 클릭을 한 경우 불편하기 때문에 불편함을 없애기 위해 hover시 input
+box를 나오게 설정 이것은 서버로 전송 할 것이니 form태그를 이용-->
             <form method="POST" action="/" class="form">
               <fieldset>
                 <!-- 해당 제목(숨김처리) -->
@@ -430,8 +430,8 @@
           </div>
         </div>
       </header>
-      <div class="slogan__inner">
-        <article class="slogan">
+      <article class="slogan">
+        <div class="inner">
           <h2 class="a11yHidden">이번 시즌 상품 소개</h2>
           <img
             class="slogan__img"
@@ -473,8 +473,8 @@
           <a class="slogan__link" href="#" title="프로모션 자세히 보기"
             >자세히 보기</a
           >
-        </article>
-      </div>
+        </div>
+      </article>
       <!-- Main -->
       <main class="main">
         <!-- Section1 -->
@@ -534,11 +534,10 @@
             class="memberService__logo"
           />
         </section>
-        <!-- Section3 -->
         <section class="ad">
           <h2 class="a11yHidden">르완다 블론드 로스트</h2>
           <div class="inner">
-            <figure class="ad__figure clearfix">
+            <figure class="ad__figure">
               <img
                 class="ad__figure-img"
                 src="./starbuximg/20_summer_rwanda_bean.png"
@@ -551,13 +550,13 @@
                   <span>르완다 블론드 로스트</span>
                 </p>
                 <p class="ad__figcaption-sellingDes">
-                  <span>비옥한 화산 토양, 높은 고도, 풍부한 강우량으로</span>
+                  <span>비옥한 화산 토양, 높은 고도, 품부한 강우량으로</span>
                   <span
                     >이상적인 풍미를 자랑하는 르완다 블론드 로스트를
                     즐겨보세요.</span
                   >
                   <span
-                    >시럽과 같은 부드러운 바디감을 가지고 있어 아이스 커피로도
+                    >시럽과 같은 부드러운 바디감을 갖고 있어 아이스 커피로도
                     좋습니다.</span
                   >
                 </p>
@@ -571,14 +570,13 @@
             <h2 class="news__heading">
               <img
                 src="./starbuximg/summer2_reserve_title.png"
-                alt="자메이카블루마운틴 출시"
+                alt="자메이카 블루 마운틴 출시"
               />
             </h2>
-            <img src="../starbuximg/summer2_reserve_bean.png" alt="" class="news-bg">
             <a href="#">자세히 보기</a>
             <ul class="news__list">
               <li>
-                이미지는 연출된 것으로, 이미지 내 MD 상품은 실제 판매되지
+                이미지는 연출된 것으로,이미지 내 MD 상품은 실제 판매되지
                 않습니다.
               </li>
               <li>해당 음료와 원두는 리저브 매장에서만 판매됩니다.</li>
