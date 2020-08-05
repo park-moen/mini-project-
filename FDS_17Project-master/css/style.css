@@ -1,3 +1,5 @@
+/* 헤더 */
+
 .header {
   z-index: 10;
   background-color: #f6f5ef;
@@ -28,6 +30,9 @@
   justify-content: flex-end;
   align-items: center;
 }
+
+/* 내비게이션 */
+
 .nav {
   order: 2;
 }
@@ -116,7 +121,9 @@
     width: 180px;
   }
 }
-/* Article */
+
+/* 슬로건 */
+
 .slogan {
   /* background-color: #70C4D9; */
   height: 650px;
@@ -251,7 +258,9 @@ figcaption div::after {
     opacity: 1;
   }
 }
-/* Section1 */
+
+/* 공지 사항 */
+
 .notice {
   height: 60px;
   text-align: center;
@@ -306,7 +315,9 @@ figcaption div::after {
     transform: translateY(-510%);
   }
 }
-/* Section2 */
+
+/* 리워드 */
+
 .memberService {
   /* height: auto; */
   height: 260px;
@@ -450,7 +461,9 @@ figcaption div::after {
 .memberService__giftDes span {
   display: block;
 }
-/* Section3 */
+
+/* 광고 */
+
 .ad {
   height: 570px;
   background-image: url(../starbuximg/20_summer_rwanda_bg.jpg);
@@ -486,6 +499,7 @@ figcaption div::after {
 .ad__figcaption-selling span {
   font-size: 3rem;
   display: block;
+  font-weight: 700;
 }
 .ad__figcaption-sellingDes {
   color: #fff;
@@ -530,7 +544,9 @@ figcaption div::after {
     transform: translateX(0%);
   }
 }
-/* News */
+
+/* 새소식 */
+
 .news {
   height: 400px;
   background-repeat: no-repeat;
